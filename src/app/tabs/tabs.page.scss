@@ -1,1 +1,19 @@
+ion-tab-bar , ion-tab-bar ion-tab-button{
+  --ion-background-color: #ef3b49;
+  color: rgba(250, 240, 230, 0.726);
+}
+
+ion-tab-bar ion-tab-button {
+  display: none;
+}
+
+ion-tab-button:hover{
+  --ion-tabbar-text-color-active: red;
+}
+
+@media screen and (max-width:992px){
+  ion-tab-bar ion-tab-button {
+    display: block;
+  }
+}
 
