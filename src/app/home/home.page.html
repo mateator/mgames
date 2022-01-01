@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title><img class="headerImg" src="../../assets/img/logoRectangularBlueChip.jpg"></ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="headerText">
+      BlueChip3D Games
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="header" > <ion-icon name="logo-android"></ion-icon> Applications</p>
+<ion-grid id="menu">
+  <ion-row>
+    <ion-col size="5.9">
+      <img (click)="redirect('DiceRoller')" class="gridImg" src="../../assets/img/diceRoller.webp">
+      <p> DiceRoller</p>
+
+    </ion-col>
+    <ion-col size="5.9">
+
+      <img (click)="redirect('TicTacToe')" class="gridImg" src="../../assets/img/tictactoe.webp">
+      <p> TicTacToe</p>
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="5.9">
+      <img class="gridImg" src="../../assets/img/coming-soon-g8c67fa7d8_640.png">
+      <p> Coming Soon</p>
+
+    </ion-col>
+    <!-- <ion-col size="5.9">
+      <img class="gridImg" src="../../assets/img/coming-soon-g8c67fa7d8_640.png">
+      <p> TicTacToe</p>
+
+    </ion-col> -->
+  </ion-row>
+</ion-grid>
+</ion-content>

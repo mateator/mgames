@@ -1,3 +1,5 @@
+$height-screenshot: 289px;
+
 #container {
   text-align: center;
   position: absolute;
@@ -14,6 +16,12 @@
   display: flex;
   // border: 2px solid black;
 }
+
+*{
+--ion-grid-width-lg: 900px;
+
+}
+
 
 ion-header, ion-title{
   // --ion-background-color: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(205,205,205,1) 100%);
@@ -48,6 +56,7 @@ ion-row:nth-of-type(2){
 
 #disclaimer{
   color: rgba(0, 0, 0, 0.8);
+  margin-top: 100px;
 }
 
 #logo{
@@ -67,12 +76,16 @@ fieldset{
 }
 
 .phoneContent{
+
   position: absolute;
-  height: 327px;
+  height: 296px;
   top: 47%;
-  right: 194px;
+  width: 192.2717px;
+  right: 191px;
   transform: translateY(-50%) skewX(-21deg);
   z-index: -1;
+
+
 }
 
 .phoneContentTicTac{
@@ -102,6 +115,10 @@ fieldset{
   transform: translateY(-50%);
 }
 
+ion-back-button{
+  color: white;
+}
+
 @media screen and (max-width:1550px){
   #container {
     width: 80%;
@@ -129,3 +146,15 @@ fieldset{
     display: none;
   }
 }
+
+@media screen and (max-width:768px){
+ .phoneCol, #disclaimer{
+   display: none;
+ }
+}
+@media screen and (max-width:568px){
+  fieldset{
+    width: 90%;
+  }
+ }
+

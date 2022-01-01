@@ -1,6 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
     <ion-title>
+
       BlueChip3D Games
     </ion-title>
   </ion-toolbar>
@@ -9,8 +13,7 @@
 <div id="container">
   <ion-grid>
     <ion-row>
-      <ion-col size="6">
-        <ion-icon (click)="previous()" *ngIf="id > '0'" id="arrowPrevious" name="chevron-back-outline"></ion-icon>
+      <ion-col size="12" size-md="6">
 
         <fieldset>
           <strong><h1>{{ name }}</h1></strong><br>
@@ -23,12 +26,11 @@
         </fieldset>
 
       </ion-col>
-      <ion-col size="6">
-        <ion-icon (click)="next()" *ngIf="id < '1'" id="arrowNext" name="chevron-forward-outline"></ion-icon>
+      <ion-col size="0" size-md="6" class="phoneCol">
 
         <div id="phone">
           <img class="img" src="../../assets/img/celphone.png">
-          <img [ngClass]="name ==='Tic Tac Toe' ? 'phoneContentTicTac' : 'phoneContent'" src="{{imgUrlScreen}}">
+          <img class="phoneContent" src="{{imgUrlScreen}}">
 
         </div>
       </ion-col>

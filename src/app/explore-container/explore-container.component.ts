@@ -17,12 +17,4 @@ export class ExploreContainerComponent implements OnInit {
 
   ngOnInit() {}
 
-    next(){
-      console.log('s');
-      this.router.navigate(['/tabs/tab' + (parseInt(this.id,10) + 2)]);
-    }
-    previous(){
-      console.log('s');
-      this.router.navigate(['/tabs/tab' + (parseInt(this.id,10))]);
-    }
 }
